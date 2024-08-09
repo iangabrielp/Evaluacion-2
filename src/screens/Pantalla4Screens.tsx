@@ -12,7 +12,7 @@ export const Pantalla4Screens = () => {
     const divide = () => {
 
         if (parseFloat(num1) >= parseFloat(num2)) {
-            setResult('Número mayor o iguales');
+            setResult('el primer numero es mayor o igual que el segundo');
           } else {
             setResult('No son mayores o iguales');
           }

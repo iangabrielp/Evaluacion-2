@@ -11,10 +11,10 @@ export const Pantalla5Screens = () => {
     const [result, setResult] = useState<string | null>(null);
 
     const divide = () => {
-        if (parseFloat(num1) >= parseFloat(num2)) {
-            setResult('Número mayor o iguales');
+        if (parseFloat(num1) <= parseFloat(num2)) {
+            setResult('el primer valor es menor o igual que el segundo');
           } else {
-            setResult('No son mayores o iguales');
+            setResult('No son menores o iguales');
           }
         };
     
