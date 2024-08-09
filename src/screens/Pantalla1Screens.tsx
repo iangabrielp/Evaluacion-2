@@ -4,6 +4,7 @@ import { Button, Text, View, Image, StyleSheet, ImageBackground, StatusBar } fro
 
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import { styles } from '../../theme/app.theme';
+import { ButtonComponent } from '../components/ButtonComponents';
 
 export const Pantalla1Screens = ({ navigation }: any) => {
 
@@ -22,38 +23,10 @@ export const Pantalla1Screens = ({ navigation }: any) => {
                         uri: 'https://www.equipo360.com/wp-content/uploads/2021/05/illuminated-3271512_1280.jpg'
                     }} />
             </View>
-            <TouchableOpacity
-                style={{
-                    ...styles.button,
-                    backgroundColor: 'red'
-                }}
-                onPress={() => navigation.navigate('Pantalla2')}>
-                <Text style={styles.textButton}>Imagen 1</Text>
-            </TouchableOpacity>
-            <TouchableOpacity
-                style={{
-                    ...styles.button,
-                    backgroundColor: 'red'
-                }}
-                onPress={() => navigation.navigate('Pantalla3')}>
-                <Text style={styles.textButton}>Imagen 2</Text>
-            </TouchableOpacity>
-            <TouchableOpacity
-                style={{
-                    ...styles.button,
-                    backgroundColor: 'red'
-                }}
-                onPress={() => navigation.navigate('Pantalla4')}>
-                <Text style={styles.textButton}>formulario 1</Text>
-            </TouchableOpacity>
-            <TouchableOpacity
-                style={{
-                    ...styles.button,
-                    backgroundColor: 'red'
-                }}
-                onPress={() => navigation.navigate('Pantalla5')}>
-                <Text style={styles.textButton}>formulario 2</Text>
-            </TouchableOpacity>
+            <ButtonComponent textButton="Imagen 1" onPress={() => navigation.navigate('Pantalla2')} />
+            <ButtonComponent textButton="Imagen 2" onPress={() => navigation.navigate('Pantalla3')} />
+            <ButtonComponent textButton=">=" onPress={() => navigation.navigate('Pantalla4')} />
+            <ButtonComponent textButton="<=" onPress={() => navigation.navigate('Pantalla5')} /> 
         </View>
     )
 }
