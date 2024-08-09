@@ -12,9 +12,9 @@ export const Pantalla5Screens = () => {
 
     const divide = () => {
         if (parseFloat(num1) <= parseFloat(num2)) {
-            setResult('el primer valor es menor o igual que el segundo');
+            setResult('el primer numero es menor o igual que el segundo');
           } else {
-            setResult('No son menores o iguales');
+            setResult('eL primer numero no es menor o igual que el segundo');
           }
         };
     

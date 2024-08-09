@@ -13,8 +13,9 @@ export const Pantalla4Screens = () => {
 
         if (parseFloat(num1) >= parseFloat(num2)) {
             setResult('el primer numero es mayor o igual que el segundo');
-          } else {
-            setResult('No son mayores o iguales');
+          } 
+          else {
+            setResult('El primer numero no es mayor o igual que el segundo');
           }
         };
     
