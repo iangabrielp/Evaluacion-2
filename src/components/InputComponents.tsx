@@ -7,9 +7,10 @@ interface Props {
     input: string;
     value: string;
     onChange: (text: string) => void;
+    
 }
 
-export const InputComponents = ({ input, value, onChange }: Props) => {
+export const InputComponents = ({ input, value, onChange}: Props) => {
 
     return (
         <TextInput
@@ -18,6 +19,7 @@ export const InputComponents = ({ input, value, onChange }: Props) => {
             style={styles.inputText}
             value={value}
             onChangeText={onChange}
+            
 
 
         />

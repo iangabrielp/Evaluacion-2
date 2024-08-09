@@ -11,23 +11,13 @@ export const Pantalla5Screens = () => {
     const [result, setResult] = useState<string | null>(null);
 
     const divide = () => {
-        const numerador = parseFloat(num1);
-        const denominador = parseFloat(num2);
-
-        if (isNaN(numerador) || isNaN(denominador)) {
-            setResult('Por favor, ingrese números válidos');
-            return;
-        }
-
-        if (numerador === 0 && denominador === 0) {
-            setResult('INDETERMINACIÓN');
-        } else if (denominador === 0) {
-            setResult('NO EXISTE DIVISIÓN PARA CERO');
-        } else {
-            const divisionResult = numerador / denominador;
-            setResult(divisionResult.toString());
-        }
-    };
+        if (parseFloat(num1) >= parseFloat(num2)) {
+            setResult('Número mayor o iguales');
+          } else {
+            setResult('No son mayores o iguales');
+          }
+        };
+    
   return (
     <View>
        <StatusBar backgroundColor='#0d0830' />
